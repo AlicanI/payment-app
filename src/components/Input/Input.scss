@@ -1,0 +1,73 @@
+@import "../../style/Variables.scss";
+
+.card-form {
+  margin-top: 25px;
+}
+
+.card-square {
+  width: 380px;
+  height: 56px;
+  margin: 0 0 16px;
+  padding: 9px 203px 10px 16px;
+  border-radius: 8px;
+  border: solid 1px $line-color;
+  background-color: $white-color;
+
+  .card-holder {
+    &__input {
+      width: 250px;
+      height: 24px;
+
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: $black-color;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .card-number {
+    &__input {
+      width: 250px;
+      height: 24px;
+
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: $black-color;
+      border: none;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+
+  &__input {
+    width: 116px;
+    height: 56px;
+    margin: 0 16px 0 0;
+    padding: 15px 12px 16px 16px;
+    border-radius: 8px;
+    border: solid 1px $line-color;
+    background-color: $white-color;
+  }
+}
+
+#months {
+  padding: 20px !important;
+}

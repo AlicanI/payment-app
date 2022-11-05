@@ -1,0 +1,108 @@
+@import "../../style/Variables.scss";
+
+.condition-area-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  width: 780px;
+  margin: 30px auto;
+
+  .terms-registration {
+    display: flex;
+    justify-content: space-between;
+    &__text {
+      width: 740px;
+      height: 18px;
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.29;
+      letter-spacing: normal;
+      color: $slate-gray-color;
+
+      span {
+        font-weight: bold;
+        color: $primary-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .visa-informing {
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    width: 780px;
+    height: 51px;
+
+    object-fit: contain;
+    border-radius: 8px;
+    border: solid 1px $blue-gray-color;
+    background-color: $white-color;
+
+    &__text {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      color: $slate-gray-color;
+
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .distance-selling {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: $slate-gray-color;
+
+    img {
+      cursor: pointer;
+    }
+    &__text {
+      font-weight: bold;
+      color: $primary-color;
+    }
+
+    &__text2 {
+      margin-left: -15px;
+    }
+  }
+}
+
+.masterpass-logo {
+  width: 108px;
+  height: 19px;
+}
+
+.check-box {
+  width: 24px;
+  height: 24px;
+
+  object-fit: contain;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.sep-vertical {
+  width: 33px;
+  height: 1px;
+
+  transform: rotate(-90deg);
+  background-color: $separator-color;
+}

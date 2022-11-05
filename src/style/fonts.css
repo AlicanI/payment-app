@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("../common/fonts/GreycliffCF-Bold.eot");
+  src: url("../common/fonts/GreycliffCF-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../common/fonts/GreycliffCF-Bold.woff2") format("woff2"),
+    url("../common/fonts/GreycliffCF-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+
+  src: url("../common/fonts/GreycliffCF-Medium.eot");
+  src: url("../common/fonts/GreycliffCF-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../common/fonts/GreycliffCF-Medium.woff2") format("woff2"),
+    url("../common/fonts/GreycliffCF-Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+
+  src: url("../common/fonts/GreycliffCF-Regular.eot");
+  src: url("../common/fonts/GreycliffCF-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../common/fonts/GreycliffCF-Regular.woff2") format("woff2"),
+    url("../common/fonts/GreycliffCF-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+
+  src: url("../common/fonts/GreycliffCF-Light.eot");
+  src: url("../common/fonts/GreycliffCF-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../common/fonts/GreycliffCF-Light.woff2") format("woff2"),
+    url("../common/fonts/GreycliffCF-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+}

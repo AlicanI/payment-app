@@ -1,0 +1,198 @@
+@import "../../style/Variables.scss";
+
+.yapikredi-background {
+  background: $yapi-kredi-color !important;
+}
+
+.card {
+  position: relative;
+  width: 380px;
+  height: 200px;
+
+  transform-style: preserve-3d;
+  transition: transform 1000ms;
+}
+.flipping {
+  transform: rotateY(180deg);
+}
+.credit-card {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+  box-shadow: 0 6px 12px -4px $black-color;
+  background: $card-gray-color;
+
+  -webkit-backface-visibility: hidden;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 21px;
+    height: 100%;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 110px;
+    align-items: center;
+    padding-right: 20px;
+    .mastercard-logo {
+      width: 100px;
+      height: 28px;
+
+      object-fit: contain;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__card-holder-name {
+    display: flex;
+    flex-direction: column;
+    .header {
+      width: 87px;
+      height: 16px;
+
+      font-size: 11px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.45;
+      letter-spacing: normal;
+      color: $blue-gray-color;
+    }
+
+    .name {
+      height: 18px;
+
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.29;
+      letter-spacing: normal;
+      color: $line-color;
+    }
+  }
+
+  &__card-holder-number {
+    display: flex;
+    flex-direction: column;
+    .header {
+      width: 87px;
+      height: 16px;
+
+      font-size: 11px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.45;
+      letter-spacing: normal;
+      color: $blue-gray-color;
+    }
+
+    .number {
+      height: 18px;
+
+      font-size: 18px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: $line-color;
+    }
+  }
+
+  &__card-expriation {
+    display: flex;
+    flex-direction: column;
+    .header {
+      width: 87px;
+      height: 16px;
+
+      font-size: 11px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.45;
+      letter-spacing: normal;
+      color: $blue-gray-color;
+    }
+
+    .date {
+      height: 18px;
+
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.29;
+      letter-spacing: normal;
+      color: $line-color;
+    }
+  }
+}
+
+.credit-card-backside {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+  box-shadow: 0 6px 12px -4px $black-color;
+  background: $card-gray-color;
+
+  -webkit-backface-visibility: hidden;
+
+  transform: rotateY(180deg);
+
+  &__top {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 70px;
+
+    .bold-line {
+      width: 100%;
+      height: 50px;
+      background-color: black;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: flex-start;
+
+    .bold-rectangle {
+      width: 290px;
+      height: 40px;
+      background-color: $white-color;
+    }
+
+    .cvv-input {
+      width: 50px !important;
+      height: 50px;
+      padding-top: 10px;
+      background-color: transparent;
+      border: none;
+      color: $white-color;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
